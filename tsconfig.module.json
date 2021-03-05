@@ -1,0 +1,12 @@
+{
+  "extends": "./tsconfig",
+  "compilerOptions": {
+    "target": "esnext",
+    "module": "esnext",
+    "rootDir": "src",
+    "resolveJsonModule": true,
+    "outDir": "build/module"
+  },
+  "include": ["src/**/*.ts", "src/**/*.json"],
+  "exclude": ["node_modules/**", "src/contracts/**"],
+}
