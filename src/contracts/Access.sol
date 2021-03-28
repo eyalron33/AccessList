@@ -1,4 +1,4 @@
-pragma solidity >=0.8.2;
+pragma solidity >=0.6.10;
 
 
 interface Access {
@@ -22,5 +22,7 @@ interface Access {
     // check if a user has access
     function hasAccess(address _user) external view returns (bool);
 
+    // transfer ownership to a new owner
+    function transferOwnership(address new_owner) external;
 
 }
